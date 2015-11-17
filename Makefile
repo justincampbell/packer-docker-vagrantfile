@@ -16,7 +16,7 @@ clean:
 
 tmp/packer.zip: tmp/
 	 wget --output-document tmp/packer.zip \
-	   https://dl.bintray.com/mitchellh/packer/packer_$(PACKER_VERSION)_linux_amd64.zip
+	   https://releases.hashicorp.com/packer/$(PACKER_VERSION)/packer_$(PACKER_VERSION)_linux_amd64.zip
 	 touch tmp/packer.zip
 
 tmp/:
