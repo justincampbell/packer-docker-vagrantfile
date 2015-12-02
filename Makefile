@@ -1,4 +1,4 @@
-PACKER_VERSION := 0.8.6
+PACKER_VERSION = $(shell curl https://checkpoint-api.hashicorp.com/v1/check/packer | jq .current_version | tr -d '"')
 
 default: release
 
